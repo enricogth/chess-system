@@ -17,6 +17,10 @@ public abstract class ChessPiece extends Piece{
 	public Color getColor() {
 		return color;
 	}
+	
+	public ChessPosition getChessPosition() {
+		return ChessPosition.fromPosition(position);
+	}
 
 	//p needs to be diferent of null, and be another color, thats how we indentify a enemy piece
 	protected boolean isThereOpponentPiece(Position position) {
